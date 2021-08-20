@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marvel Films</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+  box-sizing: border-box;
+}
+a {text-decoration: none;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background: url(https://img.bilutv.cc/film/12726/big.jpg?v=1628575268);
+  no-repeat: center;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {margin-top: 10px;}
+article {
+  float: left;
+  padding: 10px 30px 30px 30px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <h2> Avengers: Endgame</h2>
+    <p>Trong phần trước của Cuộc Chiến Vô Cực, tên Titan điên rồ luôn bị ám ảnh về sứ mệnh phải “cân bằng” vũ trụ. Sau khi thu thập đủ 6 viên đá vô cực, Thanos khiến nửa thế giới tan biến thành cát bụi chỉ bằng một cái búng tay. Và ngay lúc này, Black Widow cùng Cap và Hulk phải lên kế hoạch để giải cứu thế giới, à không, là giải cứu vũ trụ, một lần nữa.)</p>
+
+    <header>
+        <h2>Avengers: Endgame</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    Trạng thái: Hoàn tất
+                </li>
+                <li>Đạo diễn:<a href="#">Anthony Russo, Joe Russo</a></li>
+                <li>Diễn viên:<a href="#"> Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Benedict Cumberbatch, Chadwick Boseman, Brie Larson, Tom Holland, Karen Gillan, Zoe Saldana, Evangeline Lilly</a></li>
+
+                <li>Thể loại:<a href="#">Hành Động, Viễn Tưởng, Phiêu Lưu</a></li>
+                <li>Thời lượng: 181 phút</li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Video trailer</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+
+    <footer>
+        <p>
+            Copyright ® 2020 BiluTV ver 2.0 All Rights Reserved.
+            <br>
+            Liên hệ: minhhoang.org@gmail.com
+        </p>
+    </footer>
+
+</body>
+</html>
