@@ -16,7 +16,7 @@ namespace tuan_1_ltweb
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "phim", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
